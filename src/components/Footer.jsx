@@ -5,6 +5,9 @@ import Instagram from "../assets/images/icons/instagram_blue.svg";
 import Behance from "../assets/images/icons/behance_blue.svg";
 
 function Footer() {
+  const toTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <footer>
       <section className="pre_footer">
@@ -12,13 +15,19 @@ function Footer() {
           <div className="structure">
             <h5>Hello world ☺️ !</h5>
             <p>
-              <Link to="/about">En savoir plus sur moi</Link>
+              <Link to="/about" onClick={toTop}>
+                En savoir plus sur moi
+              </Link>
             </p>
             <p>
-              <Link to="/projects">Découvrir mes projets</Link>
+              <Link to="/projects" onClick={toTop}>
+                Découvrir mes projets
+              </Link>
             </p>
             <p>
-              <Link to="/contact">Contacte-moi</Link>
+              <Link to="/contact" onClick={toTop}>
+                Contacte-moi
+              </Link>
             </p>
             {/* <p>
             <a href="" target="_blank">
@@ -52,7 +61,10 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="https://www.behance.net/alexandra-rdrgs" target="_blank">
+                <Link
+                  to="https://www.behance.net/alexandra-rdrgs"
+                  target="_blank"
+                >
                   <img src={Behance} alt="behance-logo" />
                 </Link>
               </li>

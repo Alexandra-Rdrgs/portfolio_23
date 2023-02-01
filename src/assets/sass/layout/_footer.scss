@@ -8,9 +8,15 @@ footer {
       row-gap: 30px;
       div.structure {
         a {
+          color: $deepblue;
           font-size: 14px;
           opacity: 0.5;
           &:visited {
+            font-size: 14px;
+            color: $deepblue;
+            opacity: 0.5;
+          }
+          &:hover {
             font-size: 14px;
             color: $deepblue;
             opacity: 0.5;
