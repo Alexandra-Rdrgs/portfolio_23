@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import Hello from "../assets/animations/hello.json";
 import HomeLanding from "../assets/animations/landing.json";
 import Hi from "../assets/animations/hi.json";
 import WorldWideWeb from "../assets/animations/worldwideweb.json";
 import Github from "../assets/images/icons/github2.svg";
-import Link from "../assets/images/icons/link.svg";
+import WebLink from "../assets/images/icons/link.svg";
 import ProjectData from "../components/ProjectData";
 
 function Home() {
@@ -89,12 +90,12 @@ function Home() {
               choses et améliorer mes compétences.
             </p>
             <div id="container">
-              <a href="/about" className="button">
+              <Link to="/about" className="button">
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">En savoir plus</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@ function Home() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img src={Link} alt="link" />
+                      <img src={WebLink} alt="link" />
                     </a>
                   )}
                   <div className="tooltip">
@@ -141,12 +142,12 @@ function Home() {
           ))}
         </div>
         <div id="container">
-          <a href="/projects" className="button">
+          <Link to="/projects" className="button">
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
             <span className="button-text">Voir plus</span>
-          </a>
+          </Link>
         </div>
       </section>
     </>
