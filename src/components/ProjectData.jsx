@@ -32,7 +32,7 @@ const ProjectData = [
     images: [],
     date: "Janvier 2023",
     intro:
-      "Refonte de mon portfolio pour m'aider dans ma recherche d'alternance. Réalisé avec React, il est responsive et est compatible avec les navigateurs les plus utilisés. ",
+      "Refonte de mon portfolio pour m'aider dans ma recherche d'alternance. Réalisé avec React, il est responsive et est compatible avec les navigateurs les plus utilisés.",
     desc: "Refonte du portfolio en utilisant React. Le site est responsive et est compatible avec les navigateurs les plus utilisés.",
     websitelink: "",
     githublink: "https://github.com/Alexandra-Rdrgs/trombinoscope",
@@ -116,7 +116,7 @@ const ProjectData = [
     images: [],
     date: "Juillet 2022",
     intro:
-      "Projet de fin de formation à la Wild Code Scool. Il s'agit d'un projet réalisé en partenariat avex Shop Around Me. Shop around Me est une application web ayant pour but de trouver autour de soi, l'article que l'on recherche.",
+      "Projet de fin de formation à la Wild Code Scool. Il s'agit d'un projet réalisé en partenariat avec Shop Around Me. Shop around Me est une application web ayant pour but de trouver autour de soi, l'article que l'on recherche.",
     desc: "",
     desc2: "",
     websitelink: "",
@@ -132,7 +132,7 @@ const ProjectData = [
     images: [],
     date: "Juin 2022",
     intro:
-      "Création de mon premier portfolio dans le cadre de ma recherche de stage de fin de formation de Dévolopeur Web et Web mobile à la Wild Code School. Choix d'une interface simple, aux éléments évoquant le milieux informatique.",
+      "Création de mon premier portfolio dans le cadre de ma recherche de stage de fin de formation de Dévolopeur Web et Web mobile à la Wild Code School. Choix d'une interface simple, aux éléments évoquant le milieu informatique.",
     desc: "",
     desc2: "",
     websitelink: "https://alexandra-rdrgs.com/",
