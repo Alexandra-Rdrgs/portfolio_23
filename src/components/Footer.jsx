@@ -1,3 +1,8 @@
+import Linkedin from "../assets/images/icons/linkedin_blue.svg";
+import Github from "../assets/images/icons/github_blue.svg";
+import Instagram from "../assets/images/icons/instagram_blue.svg";
+import Behance from "../assets/images/icons/behance_blue.svg";
+
 function Footer() {
   return (
     <footer>
@@ -26,34 +31,22 @@ function Footer() {
             <ul>
               <li>
                 <a href="" target="_blank">
-                  <img
-                    src="/src/assets/images/icons/linkedin_blue.svg"
-                    alt="linkedin-logo"
-                  />
+                  <img src={Linkedin} alt="linkedin-logo" />
                 </a>
               </li>
               <li>
                 <a href="" target="_blank">
-                  <img
-                    src="/src/assets/images/icons/github_blue.svg"
-                    alt="github-logo"
-                  />
+                  <img src={Github} alt="github-logo" />
                 </a>
               </li>
               <li>
                 <a href="" target="_blank">
-                  <img
-                    src="/src/assets/images/icons/instagram_blue.svg"
-                    alt="instagram-logo"
-                  />
+                  <img src={Instagram} alt="instagram-logo" />
                 </a>
               </li>
               <li>
                 <a href="" target="_blank">
-                  <img
-                    src="/src/assets/images/icons/behance_blue.svg"
-                    alt="behance-logo"
-                  />
+                  <img src={Behance} alt="behance-logo" />
                 </a>
               </li>
             </ul>

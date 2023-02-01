@@ -2,6 +2,8 @@ import { useState } from "react";
 import Lottie from "lottie-react";
 import Sparkles from "/src/assets/animations/sparkles.json";
 import ProjectData from "../components/ProjectData";
+import Github from "../assets/images/icons/github2.svg";
+import Link from "../assets/images/icons/link.svg";
 
 export default function Projects() {
   const defaultOptions = {
@@ -227,10 +229,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img
-                        src="src/assets/images/icons/github2.svg"
-                        alt="github"
-                      />
+                      <img src={Github} alt="github" />
                     </a>
                   )}
                   {project.websitelink != "" && (
@@ -239,7 +238,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <img src="src/assets/images/icons/link.svg" alt="link" />
+                      <img src={Link} alt="link" />
                     </a>
                   )}
                   <div id="container">

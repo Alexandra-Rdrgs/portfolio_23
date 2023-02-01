@@ -1,3 +1,11 @@
+import Portfolio from "/src/assets/images/portfolio_2023.png";
+import Jtp from "../assets/images/jtp.png";
+import ShopAroundMe from "../assets/images/shoparoundme.png";
+import Portfolioo from "../assets/images/portfolio_2022.png";
+import MisterBin from "../assets/images/mister_bin.png";
+import HeroCorp from "../assets/images/hc.png";
+import Trombinoscope from "../assets/images/trombi.png";
+
 const ProjectData = [
   /*
   {
@@ -13,14 +21,14 @@ const ProjectData = [
     desc: "Création de l'identitée visuelle et d'un site vitrine pour une entreprise de café. Le site est responsive et est compatible avec les navigateurs les plus utilisés. Le site est développé en HTML, CSS, SASS, JavaScript et React. Il est validé par le W3C. Le site est hébergé sur Netlify. ",
     websitelink: "https://Valentin-Morette.github.io/trombinoscope/",
     githublink: "https://github.com/Alexandra-Rdrgs/trombinoscope",
-  },*/
+  },
   {
     id: "010",
     title: "Portfolio (2023)",
     subtitle: "Refonte du portfolio",
     categories: ["html", "sass", "react", "javascript"],
     technology: ["html", "sass", "react", "javascript"],
-    image: "/src/assets/images/portfolio_2023.png",
+    image: { Portfolio },
     images: [],
     date: "Janvier 2023",
     intro:
@@ -50,7 +58,7 @@ const ProjectData = [
     title: "JTP",
     subtitle: "Réalisé durant stage",
     categories: ["html", "sass", "javascript", "drupal"],
-    image: "/src/assets/images/jtp.png",
+    image: Jtp,
     images: [],
     date: "Octobre 2022",
     intro:
@@ -104,7 +112,7 @@ const ProjectData = [
       "nodejs",
       "mysql",
     ],
-    image: "/src/assets/images/shoparoundme.png",
+    image: ShopAroundMe,
     images: [],
     date: "Juillet 2022",
     intro:
@@ -120,7 +128,7 @@ const ProjectData = [
     title: "Portfolio (2022)",
     subtitle: "Projet personnel",
     categories: ["html", "css", "react", "javascript"],
-    image: "/src/assets/images/portfolio_2022.png",
+    image: Portfolio,
     images: [],
     date: "Juin 2022",
     intro:
@@ -135,7 +143,7 @@ const ProjectData = [
     title: "Hackathon : Ecologie",
     subtitle: "Mister Bin",
     categories: ["html", "css", "tailwind", "javascript", "react"],
-    image: "/src/assets/images/mister_bin.png",
+    image: MisterBin,
     images: [],
     date: "Mai 2022",
     intro:
@@ -152,7 +160,7 @@ const ProjectData = [
     subtitle: "API SuperHeroes",
     categories: ["html", "tailwind", "express", "nodejs", "MySQL"],
     technology: "",
-    image: "/src/assets/images/hc.png",
+    image: HeroCorp,
     images: [],
     date: "Avril 2022",
     intro:
@@ -169,7 +177,7 @@ const ProjectData = [
     subtitle: "Promotion 2022",
     categories: ["html", "css", "javascript"],
     technology: ["html", "css", "javascript"],
-    image: "/src/assets/images/trombi.png",
+    image: Trombinoscope,
     images: [],
     date: "Mars 2022",
     intro:
