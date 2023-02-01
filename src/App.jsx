@@ -17,7 +17,6 @@ function App() {
         <Header />
         <Routes>
           <Route
-            exact
             path="/"
             element={
               <main id="home">

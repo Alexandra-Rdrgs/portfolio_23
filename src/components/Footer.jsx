@@ -40,33 +40,33 @@ function Footer() {
             <p>Retrouve-moi sur :</p>
             <ul>
               <li>
-                <Link
-                  to="https://www.linkedin.com/in/alexandra-rdrgs/"
+                <a
+                  href="https://www.linkedin.com/in/alexandra-rdrgs/"
                   target="_blank"
                 >
                   <img src={Linkedin} alt="linkedin-logo" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="https://github.com/Alexandra-Rdrgs" target="_blank">
+                <a href="https://github.com/Alexandra-Rdrgs" target="_blank">
                   <img src={Github} alt="github-logo" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="https://www.instagram.com/__heyitsalexandra/"
+                <a
+                  href="https://www.instagram.com/__heyitsalexandra/"
                   target="_blank"
                 >
                   <img src={Instagram} alt="instagram-logo" />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="https://www.behance.net/alexandra-rdrgs"
+                <a
+                  href="https://www.behance.net/alexandra-rdrgs"
                   target="_blank"
                 >
                   <img src={Behance} alt="behance-logo" />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

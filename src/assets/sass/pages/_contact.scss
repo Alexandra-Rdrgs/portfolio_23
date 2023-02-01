@@ -2,14 +2,16 @@ main#contact {
   overflow: hidden;
   section.banner {
     position: relative;
-    div.paperplane {
-      position: absolute;
-      top: -30px;
+    div.animation_container {
       filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.35));
-      svg {
-        g {
-          path {
-            stroke-width: 3px !important;
+      div.paperplane {
+        position: absolute;
+        top: -30px;
+        svg {
+          g {
+            path {
+              stroke-width: 3px !important;
+            }
           }
         }
       }

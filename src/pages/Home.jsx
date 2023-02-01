@@ -12,7 +12,9 @@ import ProjectData from "../components/ProjectData";
 function Home() {
   const latestProjects = ProjectData.slice(0, 3);
   const [projects, setProjects] = useState(latestProjects);
-
+  const toTop = () => {
+    window.scrollTo(0, 0);
+  };
   const defaultOptions = {
     autoplay: true,
     loop: true,
@@ -90,7 +92,7 @@ function Home() {
               nouvelles choses et améliorer mes compétences.
             </p>
             <div id="container">
-              <Link to="/about" className="button">
+              <Link to="/about" className="button" onClick={toTop}>
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
                 </span>
@@ -142,7 +144,7 @@ function Home() {
           ))}
         </div>
         <div id="container">
-          <Link to="/projects" className="button">
+          <Link to="/projects" className="button" onClick={toTop}>
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>

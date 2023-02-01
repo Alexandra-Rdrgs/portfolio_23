@@ -17,17 +17,19 @@ function Contact() {
         <svg fill="rgba(1, 46, 245, 0.1)">
           <circle cx="140" cy="140" r="140" />
         </svg>
-        <Lottie
-          options={defaultOptions}
-          animationData={Paperplane}
-          height={100}
-          className="paperplane"
-          style={{
-            width: "100%",
-            zIndex: 99,
-            overflow: "hidden",
-          }}
-        />
+        <div className="animation_container">
+          <Lottie
+            options={defaultOptions}
+            animationData={Paperplane}
+            height={100}
+            className="paperplane"
+            style={{
+              width: "100%",
+              zIndex: 99,
+              overflow: "hidden",
+            }}
+          />
+        </div>
       </section>
       <section className="contact">
         <h1>contact</h1>
