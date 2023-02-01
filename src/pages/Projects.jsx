@@ -35,7 +35,7 @@ export default function Projects() {
   return (
     <>
       <section className="banner">
-        <svg fill="rgba(1, 46, 245, 0.1)">
+        <svg fill="rgba(1, 46, 245, 0.1)" xmlns="http://www.w3.org/2000/svg">
           <circle cx="140" cy="140" r="140" />
         </svg>
         <div className="title_container">

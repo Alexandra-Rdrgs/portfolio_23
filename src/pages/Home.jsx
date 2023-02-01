@@ -28,7 +28,7 @@ function Home() {
     <>
       <section className="banner">
         <div className="circle">
-          <svg fill="rgba(1, 46, 245, 0.1)">
+          <svg fill="rgba(1, 46, 245, 0.1)" xmlns="http://www.w3.org/2000/svg">
             <circle cx="140" cy="140" r="140" />
           </svg>
         </div>
@@ -148,7 +148,7 @@ function Home() {
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
-            <span className="button-text">Voir plus</span>
+            <span className="button-text">tous les projets</span>
           </Link>
         </div>
       </section>

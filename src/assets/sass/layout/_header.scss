@@ -81,6 +81,8 @@ header.header {
     font: normal 700 20px "MintSans", sans-serif;
     text-transform: lowercase;
     background-color: $blue;
+    line-height: 1.5;
+    letter-spacing: 0.15em;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-out;
@@ -209,6 +211,7 @@ header.header {
         color: whitesmoke;
         li {
           float: left;
+          letter-spacing: 0.2em;
           a {
             color: whitesmoke;
             &:hover {
