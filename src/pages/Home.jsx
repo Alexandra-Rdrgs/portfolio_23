@@ -86,8 +86,8 @@ function Home() {
             <p>
               Graphiste de formation je suis actuellement en reconversion
               professionnelle pour devenir développeuse web. Je suis passionné
-              par le et le développement web. J'adore apprendre de nouvelles
-              choses et améliorer mes compétences.
+              par le web design et le développement web. J'adore apprendre de
+              nouvelles choses et améliorer mes compétences.
             </p>
             <div id="container">
               <Link to="/about" className="button">
