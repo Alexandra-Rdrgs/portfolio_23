@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Linkedin from "../assets/images/icons/linkedin_blue.svg";
 import Github from "../assets/images/icons/github_blue.svg";
 import Instagram from "../assets/images/icons/instagram_blue.svg";
@@ -11,13 +12,13 @@ function Footer() {
           <div className="structure">
             <h5>Hello world ☺️ !</h5>
             <p>
-              <a href="/about">En savoir plus sur moi</a>
+              <Link to="/about">En savoir plus sur moi</Link>
             </p>
             <p>
-              <a href="/projects">Découvrir mes projets</a>
+              <Link to="/projects">Découvrir mes projets</Link>
             </p>
             <p>
-              <a href="/contact">Contacte-moi</a>
+              <Link to="/contact">Contacte-moi</Link>
             </p>
             {/* <p>
             <a href="" target="_blank">
@@ -30,24 +31,30 @@ function Footer() {
             <p>Retrouve-moi sur :</p>
             <ul>
               <li>
-                <a href="" target="_blank">
+                <Link
+                  to="https://www.linkedin.com/in/alexandra-rdrgs/"
+                  target="_blank"
+                >
                   <img src={Linkedin} alt="linkedin-logo" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" target="_blank">
+                <Link to="https://github.com/Alexandra-Rdrgs" target="_blank">
                   <img src={Github} alt="github-logo" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" target="_blank">
+                <Link
+                  to="https://www.instagram.com/__heyitsalexandra/"
+                  target="_blank"
+                >
                   <img src={Instagram} alt="instagram-logo" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="" target="_blank">
+                <Link to="https://www.behance.net/alexandra-rdrgs" target="_blank">
                   <img src={Behance} alt="behance-logo" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
