@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import Logo from "../assets/images/logo.png";
 function Header() {
   const closeMenu = () => {
     document.querySelector("#side-menu").checked = false;
@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="header">
       <a href="/" className="logo">
-        <img src="/src/assets/images/logo.png" alt="logo" />
+        <img src={Logo} alt="logo" />
       </a>
       <input className="side-menu" type="checkbox" id="side-menu" />
       <label className="hamb" htmlFor="side-menu">
