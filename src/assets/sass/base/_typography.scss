@@ -1,13 +1,13 @@
 @font-face {
   font-family: "MintSans";
-  src: url("src/assets/fonts/mintsans/MintSansRegular.otf") format("opentype");
+  src: url("/src/assets/fonts/mintsans/MintSansRegular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "MintSans";
-  src: url("src/assets/fonts/mintsans/MintSansExtraLight.otf")
+  src: url("/src/assets/fonts/mintsans/MintSansExtraLight.otf")
     format("opentype");
   font-weight: lighter;
   font-style: normal;
@@ -15,28 +15,28 @@
 
 @font-face {
   font-family: "MintSans";
-  src: url("src/assets/fonts/mintsans/MintSansBold.otf") format("opentype");
+  src: url("/src/assets/fonts/mintsans/MintSansBold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Esteban";
-  src: url("src/assets/fonts/esteban/Esteban-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/esteban/Esteban-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "SourceSans";
-  src: url("src/assets/fonts/sourcesans3/SourceSans3-VariableFont_wght.ttf")
+  src: url("/src/assets/fonts/sourcesans3/SourceSans3-VariableFont_wght.ttf")
     format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "SourceSans";
-  src: url("src/assets/fonts/sourcesans3/SourceSans3-Italic-VariableFont_wght.ttf")
+  src: url("/src/assets/fonts/sourcesans3/SourceSans3-Italic-VariableFont_wght.ttf")
     format("truetype");
   font-style: italic;
 }
