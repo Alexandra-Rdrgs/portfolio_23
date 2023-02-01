@@ -4,6 +4,8 @@ import Hello from "../assets/animations/hello.json";
 import HomeLanding from "../assets/animations/landing.json";
 import Hi from "../assets/animations/hi.json";
 import WorldWideWeb from "../assets/animations/worldwideweb.json";
+import Github from "../assets/images/icons/github2.svg";
+import Link from "../assets/images/icons/link.svg";
 import ProjectData from "../components/ProjectData";
 
 function Home() {
@@ -109,9 +111,24 @@ function Home() {
                 <img src={project.image} className="project-image" />
                 <p>{project.intro}</p>
                 <div className="links">
-                  <a href={project.website} target="_blank" rel="noreferrer">
-                    <img src="src/assets/images/icons/link.svg" alt="link" />
-                  </a>
+                  {project.githublink != "" && (
+                    <a
+                      href={project.githublink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Github} alt="github" />
+                    </a>
+                  )}
+                  {project.websitelink != "" && (
+                    <a
+                      href={project.websitelink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={Link} alt="link" />
+                    </a>
+                  )}
                   <div className="tooltip">
                     <a role="link" aria-disabled="true" className="button_2">
                       Voir le projet

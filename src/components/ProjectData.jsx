@@ -21,14 +21,14 @@ const ProjectData = [
     desc: "Création de l'identitée visuelle et d'un site vitrine pour une entreprise de café. Le site est responsive et est compatible avec les navigateurs les plus utilisés. Le site est développé en HTML, CSS, SASS, JavaScript et React. Il est validé par le W3C. Le site est hébergé sur Netlify. ",
     websitelink: "https://Valentin-Morette.github.io/trombinoscope/",
     githublink: "https://github.com/Alexandra-Rdrgs/trombinoscope",
-  },
+  },*/
   {
     id: "010",
     title: "Portfolio (2023)",
     subtitle: "Refonte du portfolio",
     categories: ["html", "sass", "react", "javascript"],
     technology: ["html", "sass", "react", "javascript"],
-    image: { Portfolio },
+    image: Portfolio,
     images: [],
     date: "Janvier 2023",
     intro:
@@ -128,7 +128,7 @@ const ProjectData = [
     title: "Portfolio (2022)",
     subtitle: "Projet personnel",
     categories: ["html", "css", "react", "javascript"],
-    image: Portfolio,
+    image: Portfolioo,
     images: [],
     date: "Juin 2022",
     intro:
