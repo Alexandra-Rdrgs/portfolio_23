@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Lottie from "lottie-react";
-import Sparkles from "../assets/animations/sparkles.json";
+import Sparkles from "/src/assets/animations/sparkles.json";
 import ProjectData from "../components/ProjectData";
 
 export default function Projects() {
