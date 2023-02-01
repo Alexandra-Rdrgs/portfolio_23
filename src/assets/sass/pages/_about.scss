@@ -1,0 +1,820 @@
+main#about {
+  section.banner {
+    position: relative;
+    div.animation_creation {
+      position: absolute;
+      width: 100% !important;
+      margin: 0 auto !important;
+      top: -30px;
+      filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.35));
+      svg {
+        g {
+          path {
+            stroke-width: 3px !important;
+          }
+        }
+      }
+    }
+  }
+  section.about {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+    align-items: left;
+    row-gap: 60px;
+    border-top: 2px dotted $blue;
+    padding: 30px 0px 60px;
+    h1 {
+      text-align: center;
+    }
+    div.subtitle {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      background-color: rgba(1, 46, 245, 0.05);
+      padding: 15px;
+      div.animation {
+        display: none;
+        svg {
+          transform: scale(1.5) !important;
+          g {
+            path {
+              stroke-width: 3px !important;
+            }
+          }
+        }
+      }
+      h3 {
+        margin: 15px 0px 30px;
+      }
+    }
+    div.part {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      div.animation {
+        margin: 15px 0px;
+        &.animation_illustrator {
+          max-width: 75px;
+          svg {
+            transform: scale(0.6) !important;
+            g {
+              path {
+                stroke-width: 6px !important;
+              }
+            }
+          }
+        }
+        &.animation_mouse {
+          svg {
+            transform: scale(3) !important;
+            g {
+              path {
+                stroke-width: 6px !important;
+              }
+            }
+          }
+        }
+        &.animation_code {
+          max-width: 50px;
+          svg {
+            transform: scale(2) !important;
+            g {
+              path {
+                stroke-width: 6px !important;
+              }
+            }
+          }
+        }
+      }
+      &.part1 {
+        p {
+        }
+      }
+      &:nth-child(even) {
+        p {
+        }
+      }
+      &:nth-child(odd):not(.part1) {
+        p {
+        }
+      }
+      &:not(.part1) {
+        &:before {
+        }
+      }
+      &:not(.part1) {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: " ";
+          background-color: $blue;
+          opacity: 0.35;
+          height: 2px;
+          width: 100%;
+          top: -15px;
+          right: 0px;
+        }
+      }
+    }
+    div#container {
+      margin: 15px 0px;
+    }
+    &:before {
+      position: absolute;
+      content: " ";
+      background-image: url("src/assets/images/icons/arrow.svg");
+      background-size: 28px 28px;
+      height: 28px;
+      width: 28px;
+      top: 7.5px;
+      right: 0px;
+    }
+    a {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main#about {
+    section.banner {
+      div.animation_creation {
+        svg {
+          g {
+            path {
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h1 {
+      }
+      div.subtitle {
+        div.animation {
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        h3 {
+        }
+      }
+      div.part {
+        div.animation {
+          &.animation_illustrator {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_mouse {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_code {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+        }
+        &.part1 {
+          p {
+          }
+        }
+        &:nth-child(even) {
+          p {
+          }
+        }
+        &:nth-child(odd):not(.part1) {
+          p {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+        background-size: 48px 48px;
+        height: 48px;
+        width: 48px;
+      }
+      a {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main#about {
+    section.banner {
+      div.animation_creation {
+        width: 80% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -30px;
+        svg {
+          g {
+            path {
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h1 {
+        text-align: left;
+      }
+      div.subtitle {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 15px;
+        div.animation {
+          display: block;
+          width: calc(((100% / 7) * 1.8)) !important;
+          svg {
+            transform: scale(1.5) !important;
+            g {
+              path {
+                stroke-width: 3px !important;
+              }
+            }
+          }
+        }
+        h3 {
+          width: calc(((100% / 7) * 4.7));
+          margin: 15px auto 30px;
+        }
+      }
+      div.part {
+        div.animation {
+          &.animation_illustrator {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_mouse {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_code {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+        }
+        &.part1 {
+          p {
+          }
+        }
+        &:nth-child(even) {
+          p {
+          }
+        }
+        &:nth-child(odd):not(.part1) {
+          p {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+      a {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main#about {
+    section.banner {
+      div.animation_creation {
+        width: 58% !important;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -60px;
+        svg {
+          g {
+            path {
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h1 {
+        text-align: left;
+      }
+      div.subtitle {
+        align-items: center;
+        div.animation {
+          svg {
+            g {
+              path {
+                stroke-width: 5px !important;
+              }
+            }
+          }
+        }
+        h3 {
+          margin: unset;
+        }
+      }
+      div.part {
+        div.animation {
+          &.animation_illustrator {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_mouse {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_code {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+        }
+        &.part1 {
+          p {
+          }
+        }
+        &:nth-child(even) {
+          p {
+          }
+        }
+        &:nth-child(odd):not(.part1) {
+          p {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+      a {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  main#about {
+    section.banner {
+      div.animation_creation {
+        width: 40% !important;
+        margin: 0 auto !important;
+        top: -30px;
+        svg {
+          g {
+            path {
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      flex-flow: column nowrap;
+      justify-content: left;
+      align-items: left;
+      h1 {
+        text-align: left;
+      }
+      div.subtitle {
+        align-items: center;
+        padding: 15px 0px 7.5px 0px;
+        div.animation {
+          width: calc(((100% / 3) * 0.9)) !important;
+          svg {
+            transform: scale(1) !important;
+            g {
+              path {
+                stroke-width: 4px !important;
+              }
+            }
+          }
+        }
+        h3 {
+          width: calc(((100% / 3) * 2));
+        }
+      }
+      div.part {
+        padding: 30px;
+        height: 240px;
+        div.animation {
+          width: 150px !important;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+          &.animation_illustrator {
+            width: 150px !important;
+            max-width: unset;
+            svg {
+              width: 150px !important;
+              transform: scale(1.25) !important;
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_mouse {
+            width: 150px !important;
+            svg {
+              width: 150px !important;
+              transform: scale(2.35) !important;
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_code {
+            max-width: unset;
+            width: 150px !important;
+            margin-top: -10px;
+            svg {
+              width: 150px !important;
+              transform: scale(1.5) !important;
+              g {
+                path {
+                }
+              }
+            }
+          }
+        }
+        p {
+          width: calc(100% - 210px);
+        }
+        &.part1 {
+          p {
+            width: 100%;
+          }
+        }
+        &:nth-child(even) {
+          flex-flow: row nowrap;
+          p {
+            margin-left: 60px;
+          }
+        }
+        &:nth-child(odd):not(.part1) {
+          flex-flow: row-reverse nowrap;
+          p {
+            margin-right: 60px;
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+        background-size: 48px 48px;
+        height: 48px;
+        width: 48px;
+      }
+      a.button_2 {
+        padding: 15px 30px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main#about {
+    section.banner {
+      div.animation_creation {
+        width: 50% !important;
+        top: -60px;
+        svg {
+          g {
+            path {
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h1 {
+      }
+      div.subtitle {
+        div.animation {
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        h3 {
+        }
+      }
+      div.part {
+        div.animation {
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+          &.animation_illustrator {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_mouse {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_code {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+        }
+        p {
+        }
+        &.part1 {
+          p {
+          }
+        }
+        &:nth-child(even) {
+          p {
+          }
+        }
+        &:nth-child(odd):not(.part1) {
+          p {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+      a.button_2 {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  main#about {
+    section.banner {
+      div.animation_creation {
+        width: 45% !important;
+        top: -70px;
+        svg {
+          g {
+            path {
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h1 {
+      }
+      div.subtitle {
+        div.animation {
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        h3 {
+        }
+      }
+      div.part {
+        div.animation {
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+          &.animation_illustrator {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_mouse {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+          &.animation_code {
+            svg {
+              g {
+                path {
+                }
+              }
+            }
+          }
+        }
+        p {
+        }
+        &.part1 {
+          p {
+          }
+        }
+        &:nth-child(even) {
+          p {
+          }
+        }
+        &:nth-child(odd):not(.part1) {
+          p {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+      a.button_2 {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  main#about {
+    section.banner {
+      div.animation_creation {
+        width: 45% !important;
+        top: -60px;
+        svg {
+        }
+      }
+    }
+    section.about {
+      h1 {
+      }
+      div.subtitle {
+        padding: 15px 30px 15px 0px;
+        div.animation {
+          width: calc(((100% / 3) * 0.6)) !important;
+          svg {
+            g {
+              path {
+                stroke-width: 8px !important;
+              }
+            }
+          }
+        }
+        h3 {
+          width: calc(((100% / 3) * 2.5));
+        }
+      }
+      div.part {
+        flex-flow: column nowrap;
+        div.animation {
+          &.animation_illustrator {
+            width: 18% !important;
+            svg {
+              g {
+                path {
+                  stroke-width: 6px !important;
+                }
+              }
+            }
+          }
+          &.animation_mouse {
+            svg {
+              transform: scale(2.25) !important;
+              g {
+                path {
+                  stroke-width: 8px !important;
+                }
+              }
+            }
+          }
+          &.animation_code {
+            svg {
+              g {
+                path {
+                  stroke-width: 6px !important;
+                }
+              }
+            }
+          }
+        }
+        p {
+        }
+        &.part1 {
+          p {
+          }
+        }
+        &:nth-child(even) {
+          p {
+          }
+        }
+        &:nth-child(odd):not(.part1) {
+          p {
+          }
+        }
+        &:not(.part1) {
+          &:before {
+          }
+        }
+      }
+      div#container {
+        margin: 15px 0px;
+      }
+      &:before {
+      }
+      a {
+      }
+    }
+  }
+}

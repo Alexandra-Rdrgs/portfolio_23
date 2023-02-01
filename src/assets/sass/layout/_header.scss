@@ -1,0 +1,231 @@
+header.header {
+  position: sticky;
+  background-color: $blue;
+  box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+    0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+    0 25px 20px rgba(0, 0, 0, 0.1);
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 100;
+  a.logo {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+  input[type="checkbox"].side-menu {
+    display: none;
+    &:checked ~ nav {
+      max-height: 100%;
+    }
+    &:checked ~ label.hamb span.hamb-line {
+      background: transparent;
+      &:before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+    }
+  }
+  label.hamb {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    padding: 30px 20px;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    top: 50%;
+    transform: translateY(-50%);
+    span.hamb-line {
+      background: whitesmoke;
+      display: block;
+      height: 2px;
+      position: relative;
+      width: 24px;
+      &:before {
+        background: whitesmoke;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        top: 6px;
+      }
+      &:after {
+        background: whitesmoke;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        top: -6px;
+      }
+    }
+  }
+  nav.nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    font: normal 700 20px "MintSans", sans-serif;
+    text-transform: lowercase;
+    background-color: $blue;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    z-index: 100;
+    ul.menu {
+      li {
+        a {
+          position: relative;
+          z-index: 2;
+          display: block;
+          padding: 30px;
+          color: whitesmoke;
+          &:hover {
+            /*
+            &:after {
+              position: absolute;
+              display: block;
+              left: 5%;
+              top: 35px;
+              content: "";
+              height: 30%;
+              width: 70%;
+              background-color: $blue;
+              background-image: radial-gradient(
+                  $lightsmoke 30%,
+                  transparent -10%
+                ),
+                radial-gradient($lightsmoke 0%, transparent 0%);
+              background-position: 13px 9px, 38px 38px;
+              background-size: 7.5px 7.5px;
+              background-repeat: repeat;
+              z-index: -1;
+            }*/
+          }
+        }
+
+        &:nth-child(1) {
+          a {
+            margin-top: 60px;
+          }
+        }
+        &:hover {
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  header.header {
+    a.logo {
+      img {
+      }
+    }
+    input[type="checkbox"].side-menu {
+      &:checked ~ nav {
+      }
+      &:checked ~ label.hamb span.hamb-line {
+        &:before {
+        }
+        &:after {
+        }
+      }
+    }
+    label.hamb {
+      span.hamb-line {
+        &:before {
+        }
+        &:after {
+        }
+      }
+    }
+    nav.nav {
+      left: 0%;
+      ul.menu {
+        li {
+          a {
+            &:hover {
+            }
+          }
+
+          &:nth-child(1) {
+            a {
+            }
+          }
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header.header {
+    height: 80px;
+    a.logo {
+    }
+    input[type="checkbox"].side-menu {
+      &:checked ~ nav {
+      }
+      &:checked ~ label.hamb span.hamb-line {
+        &:before {
+        }
+        &:after {
+        }
+      }
+    }
+    label.hamb {
+      display: none;
+      span.hamb-line {
+        &:before {
+        }
+        &:after {
+        }
+      }
+    }
+    nav.nav {
+      max-height: none;
+      top: 0;
+      position: relative;
+      float: right;
+      width: fit-content;
+      background-color: transparent;
+      ul.menu {
+        color: whitesmoke;
+        li {
+          float: left;
+          a {
+            color: whitesmoke;
+            &:hover {
+              background-color: transparent;
+            }
+          }
+          &:nth-child(1) {
+            a {
+              margin-top: 0px;
+            }
+          }
+          &:last-child {
+            a {
+              padding-right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

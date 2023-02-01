@@ -1,0 +1,193 @@
+@mixin transition(
+  $property: all,
+  $duration: 0.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
+  transition: $property $duration $ease;
+}
+
+.button_2 {
+  max-width: fit-content;
+  background-color: $blue;
+  color: $whitesmoke;
+  box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+    0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+    0 25px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid $blue;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 7.5px 30px;
+  font-family: "MintSans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 1.1px;
+  &:hover {
+    background-color: $whitesmoke;
+    border: 3px solid $whitesmoke;
+    color: $blue;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.button_3 {
+  max-width: fit-content;
+  background-color: $blue;
+  color: $whitesmoke;
+  box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+    0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+    0 25px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid $blue;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 7.5px 22.5px;
+  font-family: "MintSans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22.4px;
+  letter-spacing: 1.1px;
+  &:hover {
+    background-color: $whitesmoke;
+    border: 3px solid $whitesmoke;
+    color: $blue;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+a.button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.button {
+    width: 12rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $blue;
+      box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+        0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+        0 25px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: whitesmoke;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: "";
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: $blue;
+      font-family: "SourceSans";
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+        0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+        0 25px 20px rgba(0, 0, 0, 0.1);
+      .icon {
+        &.arrow {
+          background: whitesmoke;
+          transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: whitesmoke;
+    }
+  }
+}
+/*
+@supports (display: grid) {
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+*/
+/*
+@media only screen and (min-width: 768px) {
+  button.button1 {
+    background-color: transparent;
+    border: 5px solid $blue;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font: normal 500 18px "Poppins", sans-serif;
+    &:hover {
+      background-color: $blue;
+      color: whitesmoke;
+    }
+  }
+
+  button.button2 {
+    background-color: transparent;
+    border: 5px solid $middleBlue;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font: normal 500 18px "Poppins", sans-serif;
+    &:hover {
+      background-color: $middleBlue;
+      color: whitesmoke;
+    }
+  }
+
+  button.button3 {
+    background-color: transparent;
+    border: 5px solid $blue;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font: normal 500 18px "Poppins", sans-serif;
+    &:hover {
+      background-color: $blue;
+      color: whitesmoke;
+    }
+  }
+}
+*/

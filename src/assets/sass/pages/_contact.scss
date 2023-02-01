@@ -1,0 +1,297 @@
+main#contact {
+  overflow: hidden;
+  section.banner {
+    position: relative;
+    div.paperplane {
+      position: absolute;
+      top: -30px;
+      filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.35));
+      svg {
+        g {
+          path {
+            stroke-width: 3px !important;
+          }
+        }
+      }
+    }
+  }
+  section.contact {
+    position: relative;
+    padding: 30px 0px 10px;
+    border-top: 2px dotted $blue;
+    &:before {
+      position: absolute;
+      content: " ";
+      background-image: url("src/assets/images/icons/arrow.svg");
+      background-size: 28px 28px;
+      height: 28px;
+      width: 28px;
+      top: 7.5px;
+      right: 0px;
+    }
+    div.contact {
+      position: relative;
+      margin-top: 60px;
+      text-align: left;
+      width: 100%;
+      padding: 20px 15px 30px;
+      border: 3px solid $blue;
+      cursor: pointer;
+      box-shadow: 0 2.1px 1.3px rgba(0, 0, 0, 0.044),
+        0 5.9px 4.2px rgba(0, 0, 0, 0.054), 0 12.6px 9.5px rgba(0, 0, 0, 0.061),
+        0 25px 20px rgba(0, 0, 0, 0.1);
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        margin: 10px auto 28px;
+      }
+      a {
+        &:hover {
+        }
+      }
+      &:before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        border-left: 15px solid $blue;
+        border-right: 15px solid transparent;
+        border-top: 15px solid $blue;
+        border-bottom: 15px solid transparent;
+        right: 20px;
+        bottom: -30px;
+      }
+      &::after {
+        content: "";
+        width: 9px;
+        height: 9px;
+        position: absolute;
+        border-left: 13px solid $whitesmoke;
+        border-right: 11px solid transparent;
+        border-top: 11px solid $whitesmoke;
+        border-bottom: 13px solid transparent;
+        right: 23px;
+        bottom: -21.5px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main#contact {
+    section.banner {
+      div.paperplane {
+        svg {
+        }
+      }
+    }
+    section.contact {
+      &:before {
+        background-size: 48px 48px;
+        height: 48px;
+        width: 48px;
+      }
+      div.contact {
+        h2 {
+        }
+        p {
+        }
+        a {
+          &:hover {
+          }
+        }
+        &:before {
+        }
+        &::after {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main#contact {
+    section.banner {
+      div.paperplane {
+        width: 80% !important;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        svg {
+        }
+      }
+    }
+    section.contact {
+      div.contact {
+        width: 450px;
+        margin: 80px auto 80px;
+        h2 {
+        }
+        p {
+        }
+        a {
+          &:hover {
+          }
+        }
+        &:before {
+        }
+        &::after {
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main#contact {
+    section.banner {
+      div.paperplane {
+        width: 60% !important;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        svg {
+        }
+      }
+    }
+    section.contact {
+      div.contact {
+        width: 450px;
+        margin: 0px auto 80px;
+        h2 {
+        }
+        p {
+        }
+        a {
+          &:hover {
+          }
+        }
+        &:before {
+        }
+        &::after {
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  main#contact {
+    section.banner {
+      div.paperplane {
+        width: 40% !important;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        svg {
+        }
+      }
+    }
+    section.contact {
+      div.contact {
+        width: 650px;
+        margin: 80px auto 60px;
+        padding: 30px 45px 45px;
+        h2 {
+          font-size: 2.5em;
+        }
+        p {
+        }
+        a {
+          &:hover {
+          }
+        }
+        &:before {
+        }
+        &::after {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main#contact {
+    section.banner {
+      div.paperplane {
+        width: 50% !important;
+        top: -30px;
+        svg {
+        }
+      }
+    }
+    section.contact {
+      div.contact {
+        h2 {
+        }
+        p {
+        }
+        a {
+          &:hover {
+          }
+        }
+        &:before {
+        }
+        &::after {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  main#contact {
+    section.banner {
+      div.paperplane {
+        width: 42% !important;
+        top: -40px;
+        svg {
+        }
+      }
+    }
+    section.contact {
+      div.contact {
+        h2 {
+        }
+        p {
+        }
+        a {
+          &:hover {
+          }
+        }
+        &:before {
+        }
+        &::after {
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  main#contact {
+    section.banner {
+      div.paperplane {
+        width: 48% !important;
+        top: -50px;
+        svg {
+        }
+      }
+    }
+    section.contact {
+      div.contact {
+        h2 {
+        }
+        p {
+        }
+        a {
+          &:hover {
+          }
+        }
+        &:before {
+        }
+        &::after {
+        }
+      }
+    }
+  }
+}

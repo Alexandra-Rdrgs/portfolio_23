@@ -1,0 +1,917 @@
+main#home {
+  section.banner {
+    position: relative;
+    div.animation {
+      &.animation_hi {
+        position: absolute;
+        width: 22% !important;
+        top: 55px;
+        left: 0%;
+        filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.35));
+        svg {
+          transform: rotate(-5deg) translate(0px, 0px) scale(1, 1) !important;
+          g {
+            path {
+              stroke-width: 8px !important;
+            }
+          }
+        }
+      }
+      &.animation_home {
+        position: absolute;
+        width: 100% !important;
+        height: 200px !important;
+        margin: 0 auto !important;
+        top: 50px;
+        filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.35));
+        svg {
+          transform: rotate(0deg) translate(170px, 77px) scale(2.2, 2.2) !important;
+          g {
+            path {
+              stroke-width: 1.5px !important;
+            }
+          }
+        }
+      }
+      &.animation_hello {
+        position: absolute;
+        width: 22% !important;
+        top: 165px;
+        left: 75.5%;
+        filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.35));
+        svg {
+          transform: rotate(0deg) translate(0px, 0px) scale(1.25, 1.25) !important;
+        }
+      }
+    }
+  }
+  section.about {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+    align-items: left;
+    row-gap: 15px;
+    border-top: 2px dotted $blue;
+    margin-bottom: 75px;
+    padding: 30px 0px 10px;
+    h2 {
+      display: none;
+    }
+    div.about_content {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      div.animation_www {
+        display: none;
+      }
+      h3 {
+        margin: 15px 0px 30px;
+      }
+      p {
+      }
+      div#container {
+        margin: 30px 0px 0px;
+      }
+    }
+    &:before {
+      position: absolute;
+      content: " ";
+      background-image: url("src/assets/images/icons/arrow.svg");
+      background-size: 28px 28px;
+      height: 28px;
+      width: 28px;
+      top: 7.5px;
+      right: 0px;
+    }
+  }
+  section.projects {
+    position: relative;
+    border-top: 2px dotted $blue;
+    margin-bottom: 75px;
+    padding: 30px 0px 10px;
+    h2 {
+      margin-bottom: 30px;
+    }
+    div.projects-list {
+      div.project {
+        padding: 45px 0px 60px;
+        div.project-info {
+          h3 {
+          }
+          h4 {
+          }
+          img.project-image {
+            margin: 15px 0px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: center;
+          }
+          p {
+          }
+          div.links {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            column-gap: 15px;
+            padding: 15px 0px 0px;
+            a:not(.button_2) {
+              width: 43.4px;
+              height: 43.4px;
+              img {
+                width: 43px;
+                height: 43px;
+                filter: drop-shadow(0px 19px 10px rgba(0, 0, 0, 0.35));
+              }
+            }
+            div.tooltip {
+              position: relative;
+              a.button_2 {
+              }
+              span.tooltiptext {
+                visibility: hidden;
+                position: absolute;
+                z-index: 1;
+                width: 200px;
+                background-color: rgba(1, 46, 245, 0.15);
+                color: rgba(1, 46, 245, 0.5);
+                font: 400 18px "OpenSabs", sans-serif;
+                text-align: center;
+                padding: 5px 10px;
+                border-radius: 50px;
+                top: 50px;
+                left: 0px;
+              }
+              &:hover {
+                span.tooltiptext {
+                  visibility: visible;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div#container {
+      margin: 15px 0px 0px;
+      text-align: center;
+    }
+    &:before {
+      position: absolute;
+      content: " ";
+      background-image: url("src/assets/images/icons/arrow.svg");
+      background-size: 28px 28px;
+      height: 28px;
+      width: 28px;
+      top: 7.5px;
+      right: 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main#home {
+    section.banner {
+      div.animation {
+        &.animation_hi {
+          width: 25% !important;
+          top: 80px;
+          left: -5%;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_home {
+          height: 350px !important;
+          top: 75px;
+          svg {
+            transform: rotate(0deg) translate(270px, 105px) scale(2.15, 2.15) !important;
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_hello {
+          width: 22% !important;
+          top: 270px;
+          left: 78%;
+          svg {
+          }
+        }
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+        background-size: 48px 48px;
+        height: 48px;
+        width: 48px;
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.project {
+        div.project-info {
+          h3 {
+          }
+          h4 {
+          }
+          img.project-image {
+          }
+          p {
+          }
+          div.links {
+            a:not(.button_2) {
+              img {
+              }
+            }
+            div.tooltip {
+              a.button_2 {
+              }
+              span.tooltiptext {
+                top: -5px !important;
+                left: 105% !important;
+              }
+              &:hover {
+                span.tooltiptext {
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+        background-size: 48px 48px;
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main#home {
+    section.banner {
+      div.animation {
+        &.animation_hi {
+          width: 25% !important;
+          top: 65px;
+          left: -2%;
+          svg {
+            transform: rotate(-5deg) translate(0px, 0px) !important;
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_home {
+          position: absolute;
+          height: 350px !important;
+          margin: 0 0 0 5% !important;
+          top: 60px;
+          svg {
+            transform: rotate(0deg) translate(266px, 134px) scale(2.2, 2.2) !important;
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_hello {
+          width: 25% !important;
+          top: 268px;
+          left: 73%;
+          svg {
+          }
+        }
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.project {
+        div.project-info {
+          h3 {
+          }
+          h4 {
+          }
+          img.project-image {
+          }
+          p {
+          }
+          div.links {
+            a:not(.button_2) {
+              img {
+              }
+            }
+            div.tooltip {
+              a.button_2 {
+              }
+              span.tooltiptext {
+              }
+              &:hover {
+                span.tooltiptext {
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main#home {
+    section.banner {
+      div.animation {
+        &.animation_hi {
+          width: 25% !important;
+          top: 65px;
+          left: 10%;
+          svg {
+            transform: rotate(-5deg) translate(0px, 0px) !important;
+            g {
+              path {
+                stroke-width: 5px !important;
+              }
+            }
+          }
+        }
+        &.animation_home {
+          height: 350px !important;
+          margin: 0 0 0 5% !important;
+          top: 60px;
+          svg {
+            transform: rotate(0deg) translate(266px, 134px) scale(2.2, 2.2) !important;
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_hello {
+          width: 25% !important;
+          top: 268px;
+          left: 68%;
+          svg {
+          }
+        }
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+          display: block;
+          width: 75% !important;
+          margin: 0px 0px -50px -25px;
+          svg {
+            g {
+              path {
+                stroke-width: 6px !important;
+              }
+            }
+          }
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        div.project {
+          width: calc(((100% / 3) - 30px));
+          div.project-info {
+            h3 {
+            }
+            h4 {
+            }
+            img.project-image {
+            }
+            p {
+              height: 135px;
+            }
+            div.links {
+              a:not(.button_2) {
+                img {
+                }
+              }
+              div.tooltip {
+                a.button_2 {
+                }
+                span.tooltiptext {
+                }
+                &:hover {
+                  span.tooltiptext {
+                    top: 50px !important;
+                    left: 0px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  main#home {
+    section.banner {
+      div.animation {
+        &.animation_hi {
+          width: 20% !important;
+          top: 75px;
+          left: 16%;
+          svg {
+            transform: rotate(-5deg) translate(0px, 0px) !important;
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_home {
+          height: 370px !important;
+          margin: 0 0 0 10% !important;
+          top: 70px;
+          svg {
+            transform: rotate(0deg) translate(183px, 113px) scale(2, 2) !important;
+            g {
+              path {
+                stroke-width: 1.25px !important;
+              }
+            }
+          }
+        }
+        &.animation_hello {
+          width: 20% !important;
+          top: 260px;
+          left: 64%;
+          svg {
+          }
+        }
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.projects-list {
+        div.project {
+          div.project-info {
+            h3 {
+            }
+            h4 {
+            }
+            img.project-image {
+            }
+            p {
+              height: 240px;
+            }
+            div.links {
+              a:not(.button_2) {
+                img {
+                }
+              }
+              div.tooltip {
+                a.button_2 {
+                }
+                span.tooltiptext {
+                }
+                &:hover {
+                  span.tooltiptext {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main#home {
+    section.banner {
+      div.animation {
+        &.animation_hi {
+          left: 11%;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_home {
+          height: 450px !important;
+          svg {
+            transform: rotate(0deg) translate(270px, 175px) scale(2.2, 2.2) !important;
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_hello {
+          top: 325px;
+          left: 67%;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.projects-list {
+        div.project {
+          div.project-info {
+            h3 {
+            }
+            h4 {
+            }
+            img.project-image {
+            }
+            p {
+              height: 240px;
+            }
+            div.links {
+              a:not(.button_2) {
+                img {
+                }
+              }
+              div.tooltip {
+                a.button_2 {
+                }
+                span.tooltiptext {
+                }
+                &:hover {
+                  span.tooltiptext {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.projects-list {
+        div.project {
+          div.project-info {
+            h3 {
+            }
+            h4 {
+            }
+            img.project-image {
+            }
+            p {
+            }
+            div.links {
+              a:not(.button_2) {
+                img {
+                }
+              }
+              div.tooltip {
+                a.button_2 {
+                }
+                span.tooltiptext {
+                }
+                &:hover {
+                  span.tooltiptext {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  main#home {
+    section.banner {
+      div.animation {
+        &.animation_hi {
+          left: 15%;
+          top: 80px;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_home {
+          margin: 0 0 0 114px !important;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_hello {
+          width: 17% !important;
+          top: 335px;
+          left: 65.5%;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.projects-list {
+        div.project {
+          width: calc(100% / 3 - 60px);
+          div.project-info {
+            h3 {
+            }
+            h4 {
+            }
+            img.project-image {
+            }
+            p {
+              height: 210px;
+            }
+            div.links {
+              a:not(.button_2) {
+                img {
+                }
+              }
+              div.tooltip {
+                a.button_2 {
+                }
+                span.tooltiptext {
+                }
+                &:hover {
+                  span.tooltiptext {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  main#home {
+    section.banner {
+      div.animation {
+        &.animation_hi {
+          left: 12%;
+          top: 90px;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_home {
+          height: 500px !important;
+          margin: 0 0 0 140px !important;
+          top: 90px;
+          svg {
+            transform: rotate(0deg) translate(295px, 200px) scale(2.25, 2.25) !important;
+            g {
+              path {
+              }
+            }
+          }
+        }
+        &.animation_hello {
+          top: 385px;
+          svg {
+            g {
+              path {
+              }
+            }
+          }
+        }
+      }
+    }
+    section.about {
+      h2 {
+      }
+      div.about_content {
+        div.animation_www {
+          width: 50% !important;
+          margin: 0px 30px -50px -15px;
+          svg {
+            g {
+              path {
+                stroke-width: 4.5px !important;
+              }
+            }
+          }
+        }
+        h3 {
+        }
+        p {
+        }
+        div#container {
+        }
+      }
+      &:before {
+      }
+    }
+    section.projects {
+      h2 {
+      }
+      div.projects-list {
+        div.project {
+          div.project-info {
+            h3 {
+            }
+            h4 {
+            }
+            img.project-image {
+            }
+            p {
+              height: 210px;
+            }
+            div.links {
+              a:not(.button_2) {
+                img {
+                }
+              }
+              div.tooltip {
+                a.button_2 {
+                }
+                span.tooltiptext {
+                }
+                &:hover {
+                  span.tooltiptext {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      div#container {
+      }
+      &:before {
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// Base
+@import "base/reset";
+@import "base/variables";
+@import "base/typography";
+// Layout
+@import "layout/banner";
+@import "layout/header";
+@import "layout/resmenu";
+@import "layout/footer";
+@import "layout/keyframes";
+
+// Components
+@import "components/buttons";
+@import "components/title";
+
+// Pages
+@import "pages/about";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/pagenotfound";
+@import "pages/projects";
+@import "pages/project";

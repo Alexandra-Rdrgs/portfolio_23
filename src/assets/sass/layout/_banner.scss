@@ -1,0 +1,112 @@
+section.banner {
+  margin: 60px auto;
+  text-align: center;
+  svg {
+    width: 280px;
+    height: 280px;
+    circle {
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  section.banner {
+    margin: 60px auto;
+    svg {
+      width: 450px;
+      height: 450px;
+      circle {
+        cx: 225;
+        cy: 225;
+        r: 225;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  main#home {
+    section.banner {
+      svg {
+        width: 450px;
+        height: 450px;
+        circle {
+          cx: 225;
+          cy: 225;
+          r: 225;
+        }
+      }
+    }
+  }
+  main:not(#home) {
+    section.banner {
+      svg {
+        width: 350px;
+        height: 350px;
+        circle {
+          cx: 175;
+          cy: 175;
+          r: 175;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main#home {
+    section.banner {
+      svg {
+        width: 550px;
+        height: 550px;
+        circle {
+          cx: 275;
+          cy: 275;
+          r: 275;
+        }
+      }
+    }
+  }
+  main:not(#home) {
+    section.banner {
+      svg {
+        width: 450px;
+        height: 450px;
+        circle {
+          cx: 225;
+          cy: 225;
+          r: 225;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  main#home {
+    section.banner {
+      svg {
+        width: 650px;
+        height: 650px;
+        circle {
+          cx: 325;
+          cy: 325;
+          r: 325;
+        }
+      }
+    }
+  }
+  main:not(#home) {
+    section.banner {
+      svg {
+        width: 550px;
+        height: 550px;
+        circle {
+          cx: 275;
+          cy: 275;
+          r: 275;
+        }
+      }
+    }
+  }
+}
