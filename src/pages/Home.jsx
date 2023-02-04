@@ -134,7 +134,7 @@ function Home() {
                   )}
                   <div className="tooltip">
                     <a role="link" aria-disabled="true" className="button_2">
-                      Voir le projet
+                      Voir plus
                     </a>
                     <span className="tooltiptext">en construction</span>
                   </div>

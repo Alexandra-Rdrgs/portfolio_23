@@ -116,10 +116,10 @@ const ProjectData = [
     images: [],
     date: "Juillet 2022",
     intro:
-      "Projet de fin de formation à la Wild Code Scool. Il s'agit d'un projet réalisé en partenariat avec Shop Around Me. Shop around Me est une application web ayant pour but de trouver autour de soi, l'article que l'on recherche.",
+      "Projet de fin de formation à la Wild Code Scool. Il s'agit d'un projet réalisé en partenariat avec Shop Around Me. Shop around Me est une application web prioritairement mobile ayant pour but de trouver autour de soi, l'article que l'on recherche.",
     desc: "",
     desc2: "",
-    websitelink: "",
+    websitelink: "https://theodep.github.io/Shop-Around-Me/",
     githublink:
       "https://github.com/Alexandra-Rdrgs/2022-03-JS-Reims-project-3-shop-around-me",
   },
